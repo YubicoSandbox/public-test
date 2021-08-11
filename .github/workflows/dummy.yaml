@@ -1,0 +1,17 @@
+---
+
+name: Dummy workflow
+
+on: pull_request
+
+jobs:
+  dummy:
+    name: Dummy job
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+
+      - name: List stuff
+        run: ls -la
